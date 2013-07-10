@@ -4,7 +4,7 @@ var app = express.createServer(express.logger());
 
 var fs = require('fs');
 var inputfile  = "index.html";
-var fileContent = fs.readFileSync(inputfile);
+var fileContent = buf.toString(fs.readFileSync(inputfile));
 console.log("contents: " + fileContent)
 
 app.get('/', function(request, response) {
